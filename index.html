@@ -12,14 +12,44 @@
     <div class="container">
         <div class="app">
             <div class="logo">
-                <img src="" alt="">
+                <img src="pictures/logo01.png" alt="">
             </div>
             <div class="app-image">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                <textarea 
+                    name="" 
+                    class="text-box" 
+                    placeholder="Digite o teu meme." 
+                    aria-multiline="true"
+                ></textarea>
+
+                <div id="display-image"></div>
+
+                <textarea 
+                name="" 
+                class="text-box" 
+                placeholder="Digite o teu meme." 
+                aria-multiline="true"
+                ></textarea>
+
             </div>
             <div class="app-photo-picker">
+
+                <select id="meme-list">
+                    <option value="click">Clicar aqui</option>
+                </select>
+
+                <input 
+                    type="file" 
+                    id="image-input"
+                    accept="image/jpeg, image/png, image/gif, image/ico, image/jpg, image/svg"
+                >
+
             </div>
             <div class="download">
+
+                <button id="btn-download">Download</button>
+
             </div>
         </div>
     </div>
